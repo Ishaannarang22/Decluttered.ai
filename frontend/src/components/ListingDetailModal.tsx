@@ -113,7 +113,7 @@ const ListingDetailModal = ({ listing, isOpen, onClose }: ListingDetailModalProp
               <div className="flex items-center justify-between">
                 <div>
                   <h2 className="text-2xl font-bold text-[#0a1b2a] mb-2">{listing.title}</h2>
-                  <div className="flex items-center gap-4 text-sm text-[#6b7b8c]">
+                  <div className="flex items-center gap-4 text-sm text-[#5b6b7a]">
                     <span className="flex items-center gap-1">
                       <DollarSign className="w-4 h-4" />
                       ${listing.price}
@@ -249,8 +249,8 @@ const ListingDetailModal = ({ listing, isOpen, onClose }: ListingDetailModalProp
                       <ResponsiveContainer width="100%" height="100%">
                         <AreaChart data={priceHistoryData}>
                           <CartesianGrid strokeDasharray="3 3" stroke="#F6EFD9" />
-                          <XAxis dataKey="day" stroke="#6b7b8c" fontSize={12} />
-                          <YAxis stroke="#6b7b8c" fontSize={12} />
+                          <XAxis dataKey="day" stroke="#5b6b7a" fontSize={12} />
+                          <YAxis stroke="#5b6b7a" fontSize={12} />
                           <Tooltip 
                             contentStyle={{ 
                               backgroundColor: 'white', 
@@ -290,8 +290,8 @@ const ListingDetailModal = ({ listing, isOpen, onClose }: ListingDetailModalProp
                       <ResponsiveContainer width="100%" height="100%">
                         <BarChart data={platformPerformanceData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                           <CartesianGrid strokeDasharray="3 3" stroke="#F6EFD9" />
-                          <XAxis dataKey="platform" stroke="#6b7b8c" fontSize={12} />
-                          <YAxis stroke="#6b7b8c" fontSize={12} />
+                          <XAxis dataKey="platform" stroke="#5b6b7a" fontSize={12} />
+                          <YAxis stroke="#5b6b7a" fontSize={12} />
                           <Tooltip 
                             contentStyle={{ 
                               backgroundColor: 'white', 
@@ -318,8 +318,8 @@ const ListingDetailModal = ({ listing, isOpen, onClose }: ListingDetailModalProp
                         <ResponsiveContainer width="100%" height="100%">
                           <LineChart data={offerDistributionData}>
                             <CartesianGrid strokeDasharray="3 3" stroke="#F6EFD9" />
-                            <XAxis dataKey="offer" stroke="#6b7b8c" fontSize={12} />
-                            <YAxis stroke="#6b7b8c" fontSize={12} />
+                            <XAxis dataKey="offer" stroke="#5b6b7a" fontSize={12} />
+                            <YAxis stroke="#5b6b7a" fontSize={12} />
                             <Tooltip 
                               contentStyle={{ 
                                 backgroundColor: 'white', 
@@ -356,8 +356,8 @@ const ListingDetailModal = ({ listing, isOpen, onClose }: ListingDetailModalProp
                       <ResponsiveContainer width="100%" height="100%">
                         <AreaChart data={viewsOverTimeData}>
                           <CartesianGrid strokeDasharray="3 3" stroke="#F6EFD9" />
-                          <XAxis dataKey="time" stroke="#6b7b8c" fontSize={12} />
-                          <YAxis stroke="#6b7b8c" fontSize={12} />
+                          <XAxis dataKey="time" stroke="#5b6b7a" fontSize={12} />
+                          <YAxis stroke="#5b6b7a" fontSize={12} />
                           <Tooltip 
                             contentStyle={{ 
                               backgroundColor: 'white', 
@@ -391,7 +391,7 @@ const ListingDetailModal = ({ listing, isOpen, onClose }: ListingDetailModalProp
                   <TrendingDown className="w-4 h-4" />
                   Adjust Price
                 </button>
-                <button className="border-2 border-[#6b7b8c] text-[#6b7b8c] hover:bg-[#6b7b8c] hover:text-white px-6 py-3 rounded-xl font-semibold transition-all flex items-center gap-2">
+                <button className="border-2 border-[#5b6b7a] text-[#5b6b7a] hover:bg-[#5b6b7a] hover:text-white px-6 py-3 rounded-xl font-semibold transition-all flex items-center gap-2">
                   <MessageCircle className="w-4 h-4" />
                   Message All
                 </button>

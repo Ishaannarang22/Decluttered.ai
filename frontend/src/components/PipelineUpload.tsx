@@ -285,7 +285,7 @@ const PipelineUpload = () => {
             onClick={() => togglePlatform('ebay')}
             className={`flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-all ${
               selectedPlatforms.includes('ebay')
-                ? 'bg-yellow-500 text-white shadow-md'
+                ? 'bg-yellow-400 text-gray-900 shadow-md'
                 : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
             }`}
             whileHover={{ scale: 1.05 }}

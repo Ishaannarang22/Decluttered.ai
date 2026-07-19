@@ -93,7 +93,7 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
             
             <div className="text-center">
               <h1 className="text-2xl font-bold text-[#1A6A6A]">Ready to Post</h1>
-              <p className="text-sm text-[#6b7b8c]">Review and post your listings</p>
+              <p className="text-sm text-[#5b6b7a]">Review and post your listings</p>
             </div>
             
             <div className="w-20" /> {/* Spacer */}
@@ -117,7 +117,7 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
               <h3 className="text-sm sm:text-lg font-semibold text-[#1A6A6A]">Total Items</h3>
             </div>
             <div className="text-2xl sm:text-3xl font-bold text-[#5BAAA7]">{items.length}</div>
-            <div className="text-xs sm:text-sm text-[#6b7b8c]">Ready to post</div>
+            <div className="text-xs sm:text-sm text-[#5b6b7a]">Ready to post</div>
           </div>
           
           <div className="bg-gradient-to-br from-white to-[#F6EFD9]/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-[#F6EFD9]/30 shadow-lg">
@@ -128,7 +128,7 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
               <h3 className="text-sm sm:text-lg font-semibold text-[#1A6A6A]">Total Value</h3>
             </div>
             <div className="text-2xl sm:text-3xl font-bold text-[#5BAAA7]">${totalValue}</div>
-            <div className="text-xs sm:text-sm text-[#6b7b8c]">Potential earnings</div>
+            <div className="text-xs sm:text-sm text-[#5b6b7a]">Potential earnings</div>
           </div>
           
           <div className="bg-gradient-to-br from-white to-[#F6EFD9]/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-[#F6EFD9]/30 shadow-lg">
@@ -139,7 +139,7 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
               <h3 className="text-sm sm:text-lg font-semibold text-[#1A6A6A]">Posted</h3>
             </div>
             <div className="text-2xl sm:text-3xl font-bold text-green-500">{postedCount}</div>
-            <div className="text-xs sm:text-sm text-[#6b7b8c]">Successfully posted</div>
+            <div className="text-xs sm:text-sm text-[#5b6b7a]">Successfully posted</div>
           </div>
           
           <div className="bg-gradient-to-br from-white to-[#F6EFD9]/20 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-[#F6EFD9]/30 shadow-lg">
@@ -150,7 +150,7 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
               <h3 className="text-sm sm:text-lg font-semibold text-[#1A6A6A]">Posting</h3>
             </div>
             <div className="text-2xl sm:text-3xl font-bold text-yellow-500">{postingCount}</div>
-            <div className="text-xs sm:text-sm text-[#6b7b8c]">In progress</div>
+            <div className="text-xs sm:text-sm text-[#5b6b7a]">In progress</div>
           </div>
         </motion.div>
 
@@ -205,26 +205,26 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
                     </div>
                   </div>
                   
-                  <p className="text-sm text-[#6b7b8c] mb-3 line-clamp-2">
+                  <p className="text-sm text-[#5b6b7a] mb-3 line-clamp-2">
                     {item.description}
                   </p>
                   
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
-                      <Globe className="w-4 h-4 text-[#6b7b8c]" />
-                      <span className="text-sm text-[#6b7b8c]">
+                      <Globe className="w-4 h-4 text-[#5b6b7a]" />
+                      <span className="text-sm text-[#5b6b7a]">
                         {item.platforms.join(', ')}
                       </span>
                     </div>
                     
                     <div className="flex flex-wrap gap-1">
                       {item.tags.slice(0, 2).map((tag, tagIndex) => (
-                        <span key={tagIndex} className="px-2 py-1 bg-[#F6EFD9]/30 text-[#6b7b8c] rounded-full text-xs">
+                        <span key={tagIndex} className="px-2 py-1 bg-[#F6EFD9]/30 text-[#5b6b7a] rounded-full text-xs">
                           {tag}
                         </span>
                       ))}
                       {item.tags.length > 2 && (
-                        <span className="px-2 py-1 bg-[#F6EFD9]/30 text-[#6b7b8c] rounded-full text-xs">
+                        <span className="px-2 py-1 bg-[#F6EFD9]/30 text-[#5b6b7a] rounded-full text-xs">
                           +{item.tags.length - 2}
                         </span>
                       )}
@@ -262,7 +262,7 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
                       
                       <button
                         onClick={() => handleRemoveItem(item.id)}
-                        className="p-2 text-[#6b7b8c] hover:text-red-500 transition-colors"
+                        className="p-2 text-[#5b6b7a] hover:text-red-500 transition-colors"
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>
@@ -341,7 +341,7 @@ const PostQueue = ({ items, onBack, onPostComplete }: PostQueueProps) => {
                 <div className="text-3xl font-bold text-[#5BAAA7]">
                   Posted {postedCount} items
                 </div>
-                <div className="text-lg text-[#6b7b8c]">
+                <div className="text-lg text-[#5b6b7a]">
                   Estimated Earnings: <span className="font-bold text-[#5BAAA7]">${totalValue}</span>
                 </div>
               </div>

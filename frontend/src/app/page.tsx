@@ -163,7 +163,7 @@ export default function Home() {
             <h2 className="text-5xl sm:text-6xl font-extrabold text-white mb-2 drop-shadow-lg">See the clutter.</h2>
               <h2 className="text-5xl sm:text-6xl font-extrabold drop-shadow-lg">
                 <span className="text-white">Watch it</span>
-                <span className="ml-2 text-[#F6EFD9] [text-shadow:_0_0_0_#000,_0_0_0_#000,_0_0_0_#000,_0_0_0_#000,_0_0_0_#000,_0_0_0_#000,_0_0_0_#000,_0_0_0_#000]">disappear.</span>
+                <span className="ml-2 text-[#F6EFD9] [text-shadow:_-1px_-1px_0_#0a1b2a,_1px_-1px_0_#0a1b2a,_-1px_1px_0_#0a1b2a,_1px_1px_0_#0a1b2a,_0_1px_0_#0a1b2a,_0_-1px_0_#0a1b2a,_1px_0_0_#0a1b2a,_-1px_0_0_#0a1b2a]">disappear.</span>
               </h2>
           </motion.div>
 
@@ -212,7 +212,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-[#0a1b2a] mb-4">How It Works</h2>
-            <p className="text-xl text-[#6b7b8c]">Three simple steps to turn clutter into cash</p>
+            <p className="text-xl text-[#5b6b7a]">Three simple steps to turn clutter into cash</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -273,7 +273,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-[#0a1b2a] mb-4">Why Choose deCluttered.ai</h2>
-            <p className="text-xl text-[#6b7b8c]">Powerful features that make decluttering effortless</p>
+            <p className="text-xl text-[#5b6b7a]">Powerful features that make decluttering effortless</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -424,7 +424,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-[#0a1b2a] mb-4">Smart Assistant Powers</h2>
-            <p className="text-xl text-[#6b7b8c]">AI that handles everything, so you don't have to</p>
+            <p className="text-xl text-[#5b6b7a]">AI that handles everything, so you don't have to</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -444,7 +444,7 @@ export default function Home() {
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#0a1b2a] mb-4">{feature.title}</h3>
-                <p className="text-[#6b7b8c] leading-relaxed">{feature.desc}</p>
+                <p className="text-[#5b6b7a] leading-relaxed">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -456,7 +456,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-[#0a1b2a] mb-4">Trusted Marketplaces</h2>
-            <p className="text-xl text-[#6b7b8c]">Your listings go live where buyers are already searching.</p>
+            <p className="text-xl text-[#5b6b7a]">Your listings go live where buyers are already searching.</p>
           </div>
           
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60 hover:opacity-100 transition-opacity">

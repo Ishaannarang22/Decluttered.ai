@@ -236,7 +236,7 @@ const DeclutterFlow = ({ onComplete, onBack }: DeclutterFlowProps) => {
               <h2 className="text-3xl font-bold text-[#1A6A6A] mb-4">
                 Flow Complete!
               </h2>
-              <p className="text-lg text-[#6b7b8c]">
+              <p className="text-lg text-[#5b6b7a]">
                 Redirecting to dashboard...
               </p>
             </div>
