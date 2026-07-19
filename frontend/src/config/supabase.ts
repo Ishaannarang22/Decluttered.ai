@@ -1,7 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_PROJECT_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_ANON_KEY!
+// Fall back to placeholder values so the app can build/run in demo mode
+// without a configured Supabase backend (calls will fail gracefully).
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_PROJECT_URL || 'https://placeholder.supabase.co'
+const supabaseAnonKey = process.env.NEXT_PUBLIC_ANON_KEY || 'public-anon-key-placeholder'
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
